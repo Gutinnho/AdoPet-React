@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Adopet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto feito durante o **[Challenge Front-End 4ª Edição](https://www.alura.com.br/challenges/front-end-4?host=https://cursos.alura.com.br)** da escola Alura, onde foi fornecido o projeto no **[Figma](https://www.figma.com/file/PDQ9unA2aZgbDqYyk6RClZ/Challenge---Adopet)** e um trello para orientação
 
-## Available Scripts
+### **Embed do Figma**
 
-In the project directory, you can run:
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPDQ9unA2aZgbDqYyk6RClZ%2FChallenge---Adopet%3Fnode-id%3D518%253A11" allowfullscreen></iframe>
 
-### `npm start`
+## **Tecnologias Utilizadas**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+O projeto foi feito em **React** com **Typescript**.
 
-### `npm test`
+O projeto foi estilizado utilizando **SASS**. Para evitar o conflitos entre as classes de estilo, foi utilizado a biblioteca **typescript-plugin-css-modules** que aplica css modules no projeto. Também foi utilizado a biblioteca **classnames**, que serve para utiliar condicionais nas classes de maneira simples. Para retirar estilos colocados pelo navegar foi utilizado a biblioteca **normalize.css**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Bibliotecas**
 
-### `npm run build`
+- **[typescript-plugin-css-modules](https://www.npmjs.com/package/typescript-plugin-css-modules)**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **[classnames](https://www.npmjs.com/package/classnames)**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **[normalize.css](https://www.npmjs.com/package/normalize.css)**
