@@ -1,0 +1,85 @@
+@import 'styles/variables';
+
+.header {
+   height: 25rem;
+
+   padding-inline: 4.85rem 3.7rem;
+	@media (min-width: 768px){
+		padding-inline: 4.9rem 4.2rem;
+		@media (min-width: 1024px){
+			padding-inline: 16.1rem 17.4rem;
+		}
+	}
+	
+	&__forma {
+		position: absolute;
+		top: -5px;
+		left: 0;
+		z-index: -1;
+		&-svg{
+			@media (min-width: 768px){
+				width: 56rem;
+				height: 47rem;
+			}
+		}
+	}
+	&__container {
+		display: grid;
+		grid-template-columns: 10rem 1fr;
+		grid-template-rows: 4rem;
+		grid-template-areas: 'A B';
+	
+		padding-block: 4rem;
+		@media (min-width: 768px){
+			grid-template-columns: 30rem 1fr;
+			@media (min-width: 1024px){
+				grid-template-columns: 25rem 1fr;
+			}
+		}
+	}
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		
+		grid-area: A;
+		@media (min-width: 768px){
+			justify-content: space-between;
+		}
+		&-logo{
+			display: none;
+			@media(min-width: 768px){
+				display: block;
+
+				width: 12.8rem;
+				height: 3rem;
+			}
+		}
+	}
+	&__perfil{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		grid-area: B;
+	}
+}
+
+#header .header__perfil {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+
+   grid-area: B;
+}
+
+#header .header__perfil img {
+   height: 4rem;
+   width: 4rem;
+}
+
+@media (min-width: 768px) {
+   #header .header__perfil {
+      grid-area: B;
+   }
+}

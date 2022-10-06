@@ -1,0 +1,25 @@
+@import 'styles/variables';
+
+.footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: $verde;
+   height: 10.4rem;
+	p {
+		font-weight: 400;
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+		text-align: center;
+	
+		color: $footer-text-color;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	@media (min-width : 1024px) {
+			height: 8rem;
+	}
+}
