@@ -1,4 +1,4 @@
-@import 'styles/variables';
+@import 'styles/_variables';
 
 .header {
    height: 25rem;
@@ -45,15 +45,6 @@
 		grid-area: A;
 		@media (min-width: 768px){
 			justify-content: space-between;
-		}
-		&-logo{
-			display: none;
-			@media(min-width: 768px){
-				display: block;
-
-				width: 12.8rem;
-				height: 3rem;
-			}
 		}
 	}
 	&__perfil{

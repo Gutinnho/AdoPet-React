@@ -1,0 +1,56 @@
+@import 'styles/_variables';
+
+.paragraph {
+   display: flex;
+   flex-direction: column;
+
+   font-weight: 400;
+   font-size: 1.6rem;
+
+   text-align: center;
+	@media(min-width : 768px) {
+			font-size: 1.8rem;
+	}
+   .lh__20{
+      line-height: 2rem;
+   }
+   .lh__21{
+      line-height: 2.1rem;
+   }
+   .lhV__a{
+      line-height: 2.4rem;
+      @media (min-width: 768px){
+         line-height: 2.6rem;
+      }
+   }
+   .lhV__b{
+      line-height: 2.1rem;
+      @media (min-width: 768px){
+         line-height: 2.6rem;
+      }
+   }
+   .lhV__c{
+      line-height: 2rem;
+      @media (min-width: 768px){
+         line-height: 2.6rem;
+      }
+   }
+
+   .p1{
+      margin: 0;
+      @media (max-width: 768px){
+         display: none;
+      }
+   }
+   .p2{
+      margin: 0;
+   }
+}
+
+.blue{
+   color: $azul
+}
+
+.white{
+   color: white;
+}

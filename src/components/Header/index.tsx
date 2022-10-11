@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import {House, EnvelopeSimple, UserCircle} from 'phosphor-react';
-import {ReactComponent as Logo} from 'assets/Logo.svg';
 import {ReactComponent as Forma} from 'assets/FormaNTop.svg';
+import Logo from 'components/Logo';
 
 import styles from './Header.module.scss';
 
@@ -18,7 +18,12 @@ function Header({ perfil } : Props){
 
 			<div className={styles.header__container}>
 				<div className={styles.header__content}>
-					<Logo className={styles['header__content-logo']} />
+					<div>
+						<Logo
+							headerLogo={true}
+							color='white'
+						/>
+					</div>
 
 					<Link className={styles['header__content-link']} to='/'>
 						<House size={23} color='white'/>

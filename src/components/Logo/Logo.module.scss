@@ -1,0 +1,23 @@
+@import 'styles/_variables';
+
+.color__white{
+	path{
+		fill: $creme;
+	}
+}
+
+.color__blue{
+	path{
+		fill: $azul;
+	}
+}
+
+.header__logo{
+	display: none;
+	@media(min-width: 768px){
+		display: block;
+
+		width: 12.8rem;
+		height: 3rem;
+	}
+}

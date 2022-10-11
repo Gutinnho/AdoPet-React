@@ -1,0 +1,61 @@
+@import 'styles/_variables';
+
+.button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   font-weight: 600;
+   font-size: 1.6rem;
+   line-height: 2.4rem;
+   text-decoration: none;
+
+   background: $coral;
+   border-radius: 6px;
+   border: none;
+
+   width: 14.8rem;
+   height: 4rem;
+
+   color: #ffffff;
+	&:hover{
+		cursor: pointer;
+		background-color: $button-hover;
+	}
+	@media (min-width: 768px){
+		width: 16.4rem;
+
+		font-size: 1.8rem;
+	}
+}
+
+.variant__a{
+	width: 18rem;
+	height: 4rem;
+	@media (min-width: 768px){
+		width: 34.4rem;
+		height: 4.8rem;
+		@media(min-width: 1024px){
+			width: 36.2rem;
+		}
+	}	
+}
+
+.variant__b{
+	width: 14.8rem;
+	height: 4rem;
+	@media (min-width: 768px){
+		width: 16.4rem;
+		@media(min-width: 1024px){
+			width: 17.4rem;
+		}
+	}	
+}
+
+.variant__c{
+	width: 14.8rem;
+	height: 4rem;
+	@media (min-width: 768px){
+		width: 16.4rem;
+	}	
+}

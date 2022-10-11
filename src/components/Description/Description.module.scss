@@ -1,0 +1,14 @@
+@import 'styles/_variables';
+
+.description{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 1.6rem;
+	@media (min-width: 768px){
+		padding: 0;
+		gap: 2.4rem;
+	}
+}
