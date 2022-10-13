@@ -19,7 +19,8 @@ function Home(){
 					title={true}
 					titleText={'Boas-vindas!'}
 					textColor='white'
-					lhVariantion={'a'} 
+					lhV_a='2.4'
+					lhV_b='2.6' 
 					p1='Adotar pode mudar uma vida'
 					p2='Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!'
 				/>

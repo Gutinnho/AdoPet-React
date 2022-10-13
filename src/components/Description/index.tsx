@@ -7,12 +7,13 @@ interface Props{
 	title: boolean,
 	titleText?: string,
 	textColor: string,
-	lhVariantion: string | number,
+	lhV_a: string,
+	lhV_b: string,
 	p1?: string,
 	p2?: string
 }
 
-function Description({title, titleText, textColor, lhVariantion, p1, p2}: Props){
+function Description({title, titleText, textColor, lhV_a, lhV_b, p1, p2}: Props){
 	return(
 		<div className={styles.description}>
 			{
@@ -25,7 +26,8 @@ function Description({title, titleText, textColor, lhVariantion, p1, p2}: Props)
 
 			<Paragraph
 				textColor={textColor}
-				lhVariantion={lhVariantion}
+				lhV_a={lhV_a}
+				lhV_b={lhV_b}
 				p1={p1}
 				p2={p2}
 			/>
