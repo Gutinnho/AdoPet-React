@@ -1,0 +1,60 @@
+@import 'styles/_variables';
+
+.wrapper {
+	background: url(../../../public/assets/FormaBReverse.svg) no-repeat border-box right 35%;
+	background-size: 8.4rem 41.5rem;
+	@media (min-width: 768px){
+		background-size: 13.4rem 66.4rem;
+	}
+}
+
+.home{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	gap: 2.4rem;
+	@media (min-width: 768px){
+		gap: 4rem;
+	}
+	&__link{
+		text-decoration: none;
+	}
+	&__description{
+		width: 18rem;
+		@media (min-width: 768px){
+			width: 34.4rem;
+			@media (min-width: 1024px){
+				width: 40rem;
+			}
+		}
+	}
+	&__buttons{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		gap: 1.6rem;
+	}
+	&__image{
+		position: relative;
+		bottom: -2rem;
+		z-index: -1;
+
+		display: flex;
+		justify-content: center;
+		&-img{
+			width: 24.73rem;
+			height: 31.27rem;
+			@media (min-width: 768px){
+				width: 33.82rem;
+				height: 42.2rem;
+				@media (min-width: 1024px){
+					width: 34.6rem;
+					height: 43.16rem;
+				}
+			}
+		}
+	}
+}

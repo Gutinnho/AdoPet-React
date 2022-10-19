@@ -1,3 +1,5 @@
+@import 'styles/variables';
+
 :root{
   font-size: 62.5%
 }
@@ -29,4 +31,8 @@ main {
       margin-inline: auto;
     }
   }
+}
+
+.bg-azul{
+  background-color: blue;
 }

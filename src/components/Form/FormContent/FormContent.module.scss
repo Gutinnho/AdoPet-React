@@ -1,0 +1,120 @@
+@import 'styles/_variables';
+
+.formContent{
+	display: flex;
+	flex-direction: column;
+	
+	&__label{
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+	}
+
+	&__variantA{
+		align-items: center;
+		gap: 0.4rem;
+		@media (min-width: 768px){
+			gap: 0.8rem;
+		}
+		label{
+			font-weight: 400;
+			color: $cinza;
+			@media (min-width: 768px){
+				font-size: 1.8rem;
+				font-weight: 600;
+			}
+		}
+		div{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			border-radius: 6px;
+			font-weight: 400;
+			background: $cinza-claro-fundos;
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+
+			input{
+				border: none;
+
+				font-family: 'Poppins', sans-serif;
+				font-size: 1.2rem;
+				line-height: 1.6rem;
+				text-align: center;
+				width: 100%;
+				height: 100%;
+
+				overflow: scroll;
+				overflow-y: hidden;
+				
+				&:focus{
+					outline-color: $cinza;
+				}
+
+				@media (min-width: 768px){
+					font-size: 1.4rem;
+					@media (min-width: 1024px){
+						font-size: 1.6rem;
+					}
+				}
+
+				background-color: transparent;
+
+				color: $cinza;
+				&::placeholder{
+					color: $cinza-claro;
+				}
+			}
+
+			span{
+				color: $cinza;
+				position: absolute;
+				cursor: pointer;
+
+				right: calc(52% - (31.2rem/2));
+				@media (min-width: 768px) {
+					right: calc(52% - (34.4rem/2));
+					@media (min-width: 1024px){
+						right: calc(52% - (55.2rem/2));
+					}
+				}
+				display: flex;
+				align-items: center;
+			}
+			
+			height: 4rem;
+			width: 31.2rem;
+			@media (min-width: 768px){
+				width: 34.4rem;
+				@media (min-width: 1024px){
+					width: 55.2rem;
+				}
+			}
+		}
+	}
+	
+	&__variantB{
+		gap: .8rem;
+
+		label{
+			font-weight: 600;
+			text-align: left;
+			color: $azul;
+		}
+		input{
+			background: white;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+			padding: 1.6rem 1.2rem;
+
+			color: $cinza;
+			font-size: 1.4rem;
+			line-height: 2.4rem;
+			font-family: 'Poppins', sans-serif;
+			text-align: left;
+			
+			width: 28rem;
+			@media (min-width: 768px){
+				width: 49.2rem;
+			}
+		}
+	}
+}

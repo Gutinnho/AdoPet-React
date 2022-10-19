@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import styled from 'styled-components';
 import styles from './Paragraph.module.scss';
 
@@ -10,7 +11,6 @@ interface Props{
 }
 
 const StyledParagraph = styled.p`
-	color: ${({textColor}: Props) => textColor};
 	line-height: ${({lhV_a}: Props) => lhV_a}rem;
 	@media (min-width: 768px){
 		line-height: ${({lhV_b}: Props) => lhV_b}rem;
@@ -26,7 +26,11 @@ function Paragraph({textColor, lhV_a, lhV_b, p1, p2}: Props){
 						textColor={textColor} 
 						lhV_a={lhV_a} 
 						lhV_b={lhV_b} 
-						className={styles.p1}
+						className={classNames({
+							[styles.p1]: true,
+							[styles.blue]: textColor === 'blue',
+							[styles.white]: textColor === 'white'
+						})}
 					>
 						{p1}
 					</StyledParagraph>
@@ -40,7 +44,11 @@ function Paragraph({textColor, lhV_a, lhV_b, p1, p2}: Props){
 				textColor={textColor}
 				lhV_a={lhV_a} 
 				lhV_b={lhV_b} 
-				className={styles.p2}
+				className={classNames({
+					[styles.p2]: true,
+					[styles.blue]: textColor === 'blue',
+					[styles.white]: textColor === 'white'
+				})}
 			>
 				{p2}
 			</StyledParagraph>

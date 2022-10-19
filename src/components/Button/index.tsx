@@ -2,20 +2,23 @@ import styles from './Button.module.scss';
 import classNames from 'classnames';
 
 interface Props{
-	text: string,
-	variant: string
+	buttonText: string,
+	buttonType?: "button" | "submit" | "reset" | undefined,
+	buttonVariant: string
 }
 
-function Button({text, variant} : Props){
+function Button({buttonText, buttonType, buttonVariant} : Props){
 	return(
 		<button className={
 			classNames({
 				[styles.button]: true,
-				[styles.variant__a]: variant === 'a',
-				[styles.variant__b]: variant === 'b',
-				[styles.variant__c]: variant === 'c',
-			})}>
-			{text}
+				[styles.variant__a]: buttonVariant === 'a',
+				[styles.variant__b]: buttonVariant === 'b',
+				[styles.variant__c]: buttonVariant === 'c'
+		})}
+			type={buttonType}
+		>
+			{buttonText}
 		</button>
 	);
 }

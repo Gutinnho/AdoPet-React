@@ -4,16 +4,18 @@ import classNames from 'classnames';
 
 interface Props{
 	color: string,
-	headerLogo?: boolean
+	variation: 'a' | 'b' | 'header',
 }
 
-function Logo({color, headerLogo} : Props){
+function Logo({color, variation} : Props){
 	return(
 		<LogoAdoPet 
 			className={classNames({
 				[styles.color__blue]: color === 'blue',
 				[styles.color__white]: color === 'white',
-				[styles.header__logo]: headerLogo === true
+				[styles.variationA]: variation === 'a',
+				[styles.variationB]: variation === 'b',
+				[styles.header__logo]: variation === 'header'
 			})} 
 		/>
 	);

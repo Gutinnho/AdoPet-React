@@ -1,8 +1,11 @@
 @import 'styles/_variables';
-@import 'styles/_Forma.module.scss';
 
-body {
-	@include formaV__a('../../../public/assets/FormaBReverse.svg', $azul);
+.wrapper {
+	background: url(../../../public/assets/FormaBReverse.svg) no-repeat border-box right 35%;
+	background-size: 8.4rem 41.5rem;
+	@media (min-width: 768px){
+		background-size: 13.4rem 66.4rem;
+	}
 }
 
 .home{
@@ -18,11 +21,11 @@ body {
 		text-decoration: none;
 	}
 	&__description{
-		width: 18rem;
+		width: 69%;
 		@media (min-width: 768px){
-			width: 34.4rem;
+			width: 45%;
 			@media (min-width: 1024px){
-				width: 40rem;
+				width: 34%;
 			}
 		}
 	}

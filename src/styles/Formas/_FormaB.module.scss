@@ -1,0 +1,8 @@
+@mixin formaV__b($url1, $url2){
+	background: url($url1) no-repeat border-box left 76%;
+	background-size: 8.2rem 41.5rem;
+	@media (min-width: 768px) {
+		background: url($url2) no-repeat border-box right 35%;
+		background-size: 13.4rem 66.4rem;
+	}
+}
