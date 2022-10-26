@@ -2,12 +2,12 @@
 
 .description{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 
 	gap: 1.6rem;
-	@media (min-width: 768px){
+	@media (min-width: $tablet){
 		padding: 0;
 		gap: 2.4rem;
 	}

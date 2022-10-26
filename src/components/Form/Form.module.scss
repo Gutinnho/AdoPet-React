@@ -7,30 +7,28 @@
 	
 	&__variantA{
 		gap: 2.4rem;
-		@media (min-width: 768px){
+		@media (min-width: $tablet){
 			gap: 4rem;
-			@media (min-width: 1024px){
+			@media (min-width: $desktop){
 				gap: 3.2rem;
 			}
 		}
 	}
 	
 	&__variantB{
+   	background-color: $cinza-claro-fundos;
+   	border-radius: 10px;
+		
 		gap: 3.2rem;
-
-		width: 31.2rem;
-
 		margin-bottom: 1.6rem;
    	padding-inline: 1.6rem;
 		padding-block: 3.2rem;
-
-   	background-color: $cinza-claro-fundos;
-   	border-radius: 10px;
-
-		@media (min-width: 768px){
+		
+		width: 31.2rem;
+		@media (min-width: $tablet){
 			width: 52.4rem;
 			padding-inline: 3rem;
-			@media (min-width: 1024px){
+			@media (min-width: $desktop){
 				width: 55.2rem;
 			}
 		}
@@ -38,8 +36,9 @@
 
 	&__container{
 		display: flex;
-		flex-direction: column;
 		align-items: center;
+		flex-direction: column;
+		
 		gap: 2.4rem;
 	}
 }

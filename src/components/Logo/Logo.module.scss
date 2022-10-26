@@ -15,10 +15,10 @@
 .variationA{
 	width: 18.66rem;
 	height: 4.6rem;
-	@media (min-width: 768px){
+	@media (min-width: $tablet){
 		width: 25.15rem;
 		height: 6.2rem;
-		@media (min-width: 1024px){
+		@media (min-width: $desktop){
 			widht: 25.97rem;
 			height: 6.4rem;
 		}
@@ -28,10 +28,10 @@
 .variationB{
 	width: 14.25rem;
 	height: 3.43rem;
-	@media (min-width: 768px){
+	@media (min-width: $tablet){
 		width: 25.15rem;
 		height: 6.2rem;
-		@media (min-width: 1024px){
+		@media (min-width: $desktop){
 			widht: 25.97rem;
 			height: 6.4rem;
 		}
@@ -40,7 +40,7 @@
 
 .header__logo{
 	display: none;
-	@media(min-width: 768px){
+	@media(min-width: $tablet){
 		display: block;
 
 		width: 12.8rem;

@@ -4,7 +4,7 @@ import animais from 'data/animais.json';
 
 function Cards(){
 	return(
-		<ul className={styles.Cards}>
+		<ul className={styles.cards}>
 			{animais.map(card => (
 				<Card
 					{...card}

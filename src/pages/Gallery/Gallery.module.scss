@@ -1,18 +1,20 @@
+@import 'styles/_variables';
+
 .gallery{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
-	
 	gap: 3.2rem;
-	@media (min-width: 1024px){
+	@media (min-width: $desktop){
 		gap: 4rem;
 	}
+	
 	&__description{
 		width: 63%;
-		@media (min-width: 768px){
+		@media (min-width: $tablet){
 			width: 49%;
-			@media (min-width: 1024px){
+			@media (min-width: $desktop){
 				width: 29%;
 			}
 		}
