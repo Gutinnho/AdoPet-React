@@ -2,8 +2,6 @@
 @import 'styles/_general.module.scss';
 
 .header {
-   height: 25rem;
-
    padding-inline: 4.85rem 3.7rem;
 	@media (min-width: 768px){
 		padding-inline: 4.9rem 4.2rem;
@@ -55,23 +53,4 @@
 
 		grid-area: B;
 	}
-}
-
-#header .header__perfil {
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-
-   grid-area: B;
-}
-
-#header .header__perfil img {
-   height: 4rem;
-   width: 4rem;
-}
-
-@media (min-width: 768px) {
-   #header .header__perfil {
-      grid-area: B;
-   }
 }

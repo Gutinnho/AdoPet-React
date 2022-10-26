@@ -1,0 +1,73 @@
+@import 'styles/_variables.scss';
+
+.card{
+	display: flex;
+	align-items: center;
+	
+	gap: 1.6rem;
+	padding: 1.6rem;
+
+	background-color: $cinza-claro-fundos;
+
+	img{
+		width: 14.8rem;
+		margin: .8rem 0 .8rem .8rem;
+	}
+
+	&__information{
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		
+		&-a{
+			display: flex;
+			flex-direction: column;
+
+			h3{
+				margin-block: 0 .8rem;
+				color: $azul;
+				font-weight: 600;
+				font-size: 1.6rem;
+				line-height: 2rem;
+			}
+			p{
+				margin: 0;
+				color: $cinza;
+				font-size: 1.4rem;
+				line-height: 2rem;
+			}
+		}
+		&-b{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			p{
+				margin: 0;
+				font-size: 1.2rem;
+				line-height: 1.6rem;
+				color: $cinza;
+			}
+			&-link{
+				display: flex;
+				align-items: center;
+				gap: .8rem;
+				svg{
+					color: $verde;
+					transition: .2s color;
+				}
+				color: $cinza;
+				text-decoration: none;
+				font-size: 1rem;
+				line-height: 1.6rem;
+				transition: .2s color;
+				
+				&:hover{
+					color: $azul;
+					svg{
+						color: $azul;
+					}
+				}
+			}
+		}
+	}
+}

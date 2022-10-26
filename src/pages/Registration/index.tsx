@@ -1,4 +1,4 @@
-import styles from './_Registration.module.scss';
+import styles from './Registration.module.scss';
 
 import Description from 'components/Description';
 import Logo from 'components/Logo';

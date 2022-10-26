@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
 import caoEGato from 'assets/CaoEGato.png';
-import styles from './_Home.module.scss';
+import styles from './Home.module.scss';
 import Description from 'components/Description';
 import Button from 'components/Button';
 import Logo from 'components/Logo';

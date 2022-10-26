@@ -3,24 +3,38 @@ import Header from 'components/Header';
 import Home from 'pages/Home';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Registration from 'pages/Registration';
+import Login from 'pages/Login';
+
+import styles from 'index.module.scss';
+import Gallery from 'pages/Gallery';
 
 function AppRouter(){
 	return(
 		<Router>
-			<Header 
-				perfil={true}
-			/>
+			<div className={styles.wrapper}>
+				<div className={styles.wrapper__gridA}>
+					<Header 
+						perfil={true}
+					/>
+				</div>
 
-			<main>
-				<Routes>
-					<Route path='/' element={<Home />} />
+				<main className={styles.wrapper__gridB}>
+					<Routes>
+						<Route path='/' element={<Home />} />
 
-					<Route path='/registration' element={<Registration />} />
-				</Routes>
-			</main>
+						<Route path='/login' element={<Login />} />
 
-				<Footer />
-			</Router>
+						<Route path='/registration' element={<Registration />} />
+
+						<Route path='/gallery' element={<Gallery />} />
+					</Routes>
+				</main>
+
+				<div className={styles.wrapper__gridC}>
+					<Footer />
+				</div>
+			</div>
+		</Router>
 	);
 }
 

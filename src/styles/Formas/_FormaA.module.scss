@@ -1,7 +1,0 @@
-@mixin formaV__a($url){
-	background: url($url) no-repeat border-box right 35%;
-	background-size: 8.4rem 41.5rem;
-	@media (min-width: 768px){
-		background-size: 13.4rem 66.4rem;
-	}
-}
