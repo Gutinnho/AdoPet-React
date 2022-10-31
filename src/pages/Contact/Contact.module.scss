@@ -1,0 +1,25 @@
+@import 'styles/variables';
+
+.contact{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	gap: 2.6rem;
+	@media(min-width: 768px){
+		gap: 4rem;
+		@media(min-width: 1024px){
+			gap: 3.7rem;
+		}
+	}
+
+	&__description{
+		width: 63%;
+		@media(min-width: $tablet){
+			width: 68%;
+			@media(min-width: $desktop){
+				width: 48%;
+			}
+		}
+	}
+}

@@ -15,10 +15,14 @@ function Form({children, variant, buttonText, buttonType, buttonVariant}: Props)
 	return(
 		<form className={classNames({
 			[styles.form]: true,
-			[styles['form__variantA']]: variant === 'a',
-			[styles['form__variantB']]: variant === 'b' 
+			[styles.form__variantA]: variant === 'a',
+			[styles.form__variantB]: variant === 'b' 
 		})}>
-			<div className={styles.form__container}>
+			<div className={classNames({
+				[styles.form__container]: true,
+				[styles['form__container-a']]: variant === 'a',
+				[styles['form__container-b']]: variant === 'b'
+			})}>
 				{children}
 			</div>
 

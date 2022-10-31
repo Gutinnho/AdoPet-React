@@ -7,6 +7,7 @@ import Login from 'pages/Login';
 
 import styles from 'index.module.scss';
 import Gallery from 'pages/Gallery';
+import Contact from 'pages/Contact';
 
 function AppRouter(){
 	return(
@@ -27,6 +28,8 @@ function AppRouter(){
 						<Route path='/registration' element={<Registration />} />
 
 						<Route path='/gallery' element={<Gallery />} />
+
+						<Route path='/contact' element={<Contact />} />
 					</Routes>
 				</main>
 
