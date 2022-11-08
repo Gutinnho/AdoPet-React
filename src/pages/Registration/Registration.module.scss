@@ -1,17 +1,15 @@
 @import 'styles/_variables';
-@import 'styles/_Forma.module.scss';
-
-.wrapper{
-	@include formaV__b('../../../public/assets/FormaBNormal.svg', '../../../public/assets/FormaBReverse.svg')
-}
 
 .registration{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 
+	grid-area: B;
+
+	height: 100%;
+
 	gap: 2.4rem;
-	margin-block: 10rem;
 	@media (min-width: 768px){
 		gap: 4rem;
 	}

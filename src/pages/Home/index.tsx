@@ -2,18 +2,22 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
 import caoEGato from 'assets/CaoEGato.png';
-import styles from './Home.module.scss';
 import Description from 'components/Description';
 import Button from 'components/Button';
 import Logo from 'components/Logo';
+
+import styles from './Home.module.scss';
+import general from 'styles/_global.module.scss';
+import Forma from 'components/Forma';
 
 
 function Home(){	
 	return(
 		<section className={classNames({
 			[styles.home]: true,
-			[styles.wrapper]: true
-		})}>	
+			[general.gridA]: true
+		})}>
+
 			<Logo
 				color='blue'
 				variation='a'
@@ -21,9 +25,11 @@ function Home(){
 
 			<div className={styles.home__description}>
 	
+				<h2 className={styles['home__description-title']}>
+					Boas Vindas!
+				</h2>
+
 				<Description
-					title={true}
-					titleText={'Boas-vindas!'}
 					textColor='blue'
 					lhV_a='2.4'
 					lhV_b='2.6' 
@@ -57,6 +63,10 @@ function Home(){
 					/>
 
 			</div>
+
+			<Forma
+				variation='a'
+			/>
 		</section>
 	);
 }

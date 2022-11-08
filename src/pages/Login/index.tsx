@@ -1,9 +1,12 @@
-import styles from './Login.module.scss'
 import classNames from "classnames";
+
 import Logo from "components/Logo";
 import Description from 'components/Description';
 import Form from 'components/Form';
 import FormContent from 'components/Form/FormContent';
+
+import styles from './Login.module.scss'
+import Forma from "components/Forma";
 
 function Login(){
 	return(
@@ -21,7 +24,6 @@ function Login(){
 				lhV_b='2.1'
 				textColor='blue'
 				p2='Já tem conta? Faça seu login:'
-				title={false}
 			/>
 
 			<Form
@@ -48,6 +50,10 @@ function Login(){
 					required
 				/>
 			</Form>
+
+			<Forma
+				variation='b'
+			/>
 		</div>
 	)
 }

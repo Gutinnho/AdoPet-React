@@ -1,14 +1,33 @@
 @import 'styles/_variables';
 
-.description{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+.paragraph {
+   display: flex;
+   flex-direction: column;
 
-	gap: 1.6rem;
-	@media (min-width: $tablet){
-		padding: 0;
-		gap: 2.4rem;
+   font-weight: 400;
+   font-size: 1.6rem;
+
+   text-align: center;
+	@media(min-width : $tablet) {
+		font-size: 1.8rem;
 	}
+   
+   .p1{
+      margin: 0;
+      @media (max-width: $tablet){
+         display: none;
+      }
+   }
+   
+   .p2{
+      margin: 0;
+   }
+}
+
+.blue{
+   color: $azul
+}
+
+.white{
+   color: white;
 }

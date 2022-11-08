@@ -1,36 +1,59 @@
-import styles from './Description.module.scss'
+import classNames from 'classnames';
+import styled from 'styled-components';
 
-import Title from "./Title";
-import Paragraph from "./Paragraph";
+import styles from './Description.module.scss';
 
 interface Props{
-	title: boolean,
-	titleText?: string,
 	textColor: string,
 	lhV_a: string,
 	lhV_b: string,
 	p1?: string,
-	p2?: string
+	p2?: string	
 }
 
-function Description({title, titleText, textColor, lhV_a, lhV_b, p1, p2}: Props){
+const StyledParagraph = styled.p`
+	line-height: ${({lhV_a}: Props) => lhV_a}rem;
+	@media (min-width: 768px){
+		line-height: ${({lhV_b}: Props) => lhV_b}rem;
+	}
+`;	
+
+function Description({textColor, lhV_a, lhV_b, p1, p2}: Props){
 	return(
-		<div className={styles.description}>
+		<div className={styles.paragraph}>
 			{
-				title ? (
-					<Title 
-						titleText={titleText}
-					/>
-				) : (<></>)
+				(p1 !== undefined) ? (
+					<StyledParagraph 
+						textColor={textColor} 
+						lhV_a={lhV_a} 
+						lhV_b={lhV_b} 
+						className={classNames({
+							[styles.p1]: true,
+							[styles.blue]: textColor === 'blue',
+							[styles.white]: textColor === 'white'
+						})}
+					>
+						{p1}
+					</StyledParagraph>
+				) : (
+					<>
+					</>
+				)
 			}
 
-			<Paragraph
+			<StyledParagraph  
 				textColor={textColor}
-				lhV_a={lhV_a}
-				lhV_b={lhV_b}
-				p1={p1}
-				p2={p2}
-			/>
+				lhV_a={lhV_a} 
+				lhV_b={lhV_b} 
+				className={classNames({
+					[styles.p2]: true,
+					[styles.blue]: textColor === 'blue',
+					[styles.white]: textColor === 'white'
+				})}
+			>
+				{p2}
+			</StyledParagraph>
+
 		</div>
 	);
 }

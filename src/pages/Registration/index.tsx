@@ -5,6 +5,7 @@ import Logo from 'components/Logo';
 import Form from 'components/Form'
 import FormContent from 'components/Form/FormContent';
 import classNames from 'classnames';
+import Forma from 'components/Forma';
 
 function Registration(){
 	return(
@@ -19,7 +20,6 @@ function Registration(){
 
 			<div className={styles.registration__description}>
 				<Description
-					title={false}
 					textColor='blue'
 					lhV_a='2.1'
 					lhV_b='2.6'
@@ -69,6 +69,10 @@ function Registration(){
 					required
 				/>
 			</Form>
+
+			<Forma
+				variation='b'
+			/>
 		</div>
 	);
 }

@@ -1,4 +1,5 @@
 import Description from "components/Description";
+import Forma from "components/Forma";
 import Cards from "./Cards";
 import styles from './Gallery.module.scss';
 
@@ -11,11 +12,14 @@ function Gallery(){
 					lhV_b='2'
 					textColor='blue'
 					p2='Olá! Veja os amigos disponíveis para adoção!'
-					title={false}
 				/>
 			</div>
 
 			<Cards />
+
+			<Forma
+				variation='c'
+			/>
 		</section>
 	);
 }

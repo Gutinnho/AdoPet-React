@@ -1,15 +1,13 @@
 @import 'styles/_variables';
-@import 'styles/_Forma.module.scss';
-
-.wrapper{
-	@include formaV__b('../../../public/assets/FormaBNormal.svg', '../../../public/assets/FormaBReverse.svg')
-}
 
 .login{
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	flex-direction: column;
+
+	grid-area: B;
+
+	height: 100%;
 
 	gap: 4.2rem;
 }

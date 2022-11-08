@@ -1,25 +1,24 @@
-import Footer from 'components/Footer';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
 import Header from 'components/Header';
 import Home from 'pages/Home';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Registration from 'pages/Registration';
 import Login from 'pages/Login';
-
-import styles from 'index.module.scss';
+import Registration from 'pages/Registration';
 import Gallery from 'pages/Gallery';
 import Contact from 'pages/Contact';
+import Profile from 'pages/Profile';
+import Footer from 'components/Footer';
+
+import general from 'styles/_global.module.scss';
 
 function AppRouter(){
 	return(
 		<Router>
-			<div className={styles.wrapper}>
-				<div className={styles.wrapper__gridA}>
-					<Header 
-						perfil={true}
-					/>
-				</div>
-
-				<main className={styles.wrapper__gridB}>
+			<div className={general.wrapper}>
+				<Header
+					perfil={true}
+				/>
+				<main>
 					<Routes>
 						<Route path='/' element={<Home />} />
 
@@ -30,12 +29,12 @@ function AppRouter(){
 						<Route path='/gallery' element={<Gallery />} />
 
 						<Route path='/contact' element={<Contact />} />
+
+						<Route path='/profile' element={<Profile />} />
 					</Routes>
 				</main>
 
-				<div className={styles.wrapper__gridC}>
-					<Footer />
-				</div>
+				<Footer />
 			</div>
 		</Router>
 	);

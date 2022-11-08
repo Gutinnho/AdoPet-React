@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import styles from './FormContent.module.scss';
-import { Eye, EyeSlash } from 'phosphor-react';
+import { Eye, EyeSlash, UserCircle } from 'phosphor-react';
 import { useState } from 'react'
 
 interface Props{
@@ -31,23 +31,51 @@ function FormContent({variant, textLabel, id, inputPlaceHolder, inputType, requi
 				{textLabel}
 			</label>
 
-			<div className={styles.formContent__input}>
-				{
-					(inputType === 'text' || inputType === 'email' || inputType === 'tel') ? (
+			{
+				(inputType === 'text' || inputType === 'email' || inputType === 'tel') ? (
+					<div>
 						<input
+							className={classNames({
+								[styles['formContent__variantA-inputPadrao']]: variant === 'a',
+								[styles['formContent__variantB-inputPadrao']]: variant === 'b'
+							})}
+							id={id}
 							placeholder={inputPlaceHolder}
 							type={inputType}
 							required={required}
 							autoComplete='on'
-						>
-							
-						</input>
-					) : <></>
-				}
+						/>
+					</div>
+				) : <></>
+			}
 
-				{
-					(inputType === "password") ? ( 
+			{
+				(inputType === 'file') ? (
+					<div className={styles['formContent__variantB-profilePhoto']}>
+						<UserCircle size={100} weight='thin' color='#36D6AD' from={'inputImg'}>
+						</UserCircle>
+
 						<input
+							id='inputImg'
+							className={styles.inputImg}
+							placeholder={inputPlaceHolder}
+							type={inputType}
+							required={required}
+							accept='.png, .jpg, .jpeg'
+						/>
+						<label htmlFor='inputImg'>
+							Clique para mudar
+						</label>
+						
+					</div>
+				) : <></>
+			}
+
+			{
+				(inputType === "password") ? (
+					<div>
+						<input
+							id={id}
 							placeholder={inputPlaceHolder}
 							type={
 							(inputType === 'password' ? (reveal ? 'text' : 'password'):(inputType))
@@ -55,13 +83,7 @@ function FormContent({variant, textLabel, id, inputPlaceHolder, inputType, requi
 						autoComplete='off'
 						required={required}
 						/>
-					) : <></>
-				}
-
-				{
-					(inputType === 'password')?(
-						<span 
-							className="formContent__passwordReveal"
+						<span
 							onClick={passwordReveal}
 						>
 							{	
@@ -72,14 +94,15 @@ function FormContent({variant, textLabel, id, inputPlaceHolder, inputType, requi
 								)
 							}
 						</span>
-					):(
-						<></>
-					)
-				}
+					</div>
+				) : <></>
+			}
 
-				{
-					(inputType === 'textArea') ? (
-						<textarea  
+			{
+				(inputType === 'textArea') ? (
+					<div>
+						<textarea
+							className={styles['formContent__variantB-textArea']}
 							id={id}
 							placeholder={inputPlaceHolder} 
 							cols={30} 
@@ -88,11 +111,11 @@ function FormContent({variant, textLabel, id, inputPlaceHolder, inputType, requi
 							spellCheck
 							maxLength={500}
 							minLength={50}
-                     wrap="soft" 
+							wrap="soft" 
 						></textarea>
-					) : <></>
-				}
-			</div>
+					</div>
+				) : <></>
+			}
 		</div>
 	);
 }

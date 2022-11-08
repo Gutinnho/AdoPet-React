@@ -1,27 +1,34 @@
 @import 'styles/variables';
 
-.contact{
+.profile{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 
 	grid-area: B;
 
-	gap: 2.6rem;
+	gap: 2.4rem;
 	@media(min-width: $tablet){
-		gap: 4rem;
+		gap: 2.6rem;
 		@media(min-width: $desktop){
-			gap: 3.7rem;
+			gap: 4rem;
 		}
 	}
 
 	&__description{
-		width: 63%;
+		width: 69%;
 		@media(min-width: $tablet){
 			width: 68%;
 			@media(min-width: $desktop){
-				width: 48%;
+				width: 54%;
 			}
 		}
+	}
+
+	&__formTitle{
+		color: $cinza;
+		font-weight: 600;
+		font-size: 2.1rem;
+		line-height: 2.4rem;
 	}
 }

@@ -4,6 +4,7 @@ import {ReactComponent as Forma} from 'assets/FormaNTop.svg';
 import Logo from 'components/Logo';
 
 import styles from './Header.module.scss';
+import classNames from 'classnames';
 
 interface Props{
 	perfil: boolean;
@@ -11,7 +12,10 @@ interface Props{
 
 function Header({ perfil } : Props){
 	return(
-		<header className={styles.header}>
+		<header className={classNames({
+			[styles.header]: true,
+			[styles.gridA]: true
+		})}>
 			<div className={styles.header__forma}>
 				<Forma className={styles['header__forma-svg']}/>
 			</div>

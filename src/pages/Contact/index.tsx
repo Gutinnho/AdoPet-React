@@ -1,18 +1,22 @@
+import classNames from "classnames";
 import Description from "components/Description";
 import Form from "components/Form";
 import FormContent from "components/Form/FormContent";
+import Forma from "components/Forma";
 
 import styles from './Contact.module.scss';
 
 function Contact(){
 	return(
-		<section className={styles.contact}>
+		<section className={classNames({
+			[styles.contact]: true,
+			[styles.wrapper]: true
+		})}>
 			<div className={styles.contact__description}>
 				<Description 
 					lhV_a="2"
 					lhV_b="2.6"
 					textColor="blue"
-					title={false}
 					p2="Envie uma mensagem para a pessoa ou instituição que está cuidando do animal:"
 				/>
 			</div>
@@ -59,6 +63,10 @@ function Contact(){
 					required
 				/>
 			</Form>
+
+			<Forma
+				variation='d'
+			/>
 		</section>
 	);
 }
