@@ -11,7 +11,7 @@ interface Props{
 	p2?: string	
 }
 
-const StyledParagraph = styled.p`
+const StyledDescription = styled.p`
 	line-height: ${({lhV_a}: Props) => lhV_a}rem;
 	@media (min-width: 768px){
 		line-height: ${({lhV_b}: Props) => lhV_b}rem;
@@ -23,7 +23,7 @@ function Description({textColor, lhV_a, lhV_b, p1, p2}: Props){
 		<div className={styles.paragraph}>
 			{
 				(p1 !== undefined) ? (
-					<StyledParagraph 
+					<StyledDescription 
 						textColor={textColor} 
 						lhV_a={lhV_a} 
 						lhV_b={lhV_b} 
@@ -34,14 +34,14 @@ function Description({textColor, lhV_a, lhV_b, p1, p2}: Props){
 						})}
 					>
 						{p1}
-					</StyledParagraph>
+					</StyledDescription>
 				) : (
 					<>
 					</>
 				)
 			}
 
-			<StyledParagraph  
+			<StyledDescription 
 				textColor={textColor}
 				lhV_a={lhV_a} 
 				lhV_b={lhV_b} 
@@ -52,7 +52,7 @@ function Description({textColor, lhV_a, lhV_b, p1, p2}: Props){
 				})}
 			>
 				{p2}
-			</StyledParagraph>
+			</StyledDescription>
 
 		</div>
 	);

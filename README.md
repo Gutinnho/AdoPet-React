@@ -1,4 +1,6 @@
-## ![Logo do projeto Adopet](./src/assets/Logo.svg)
+![Logo do projeto Adopet](https://user-images.githubusercontent.com/90591284/200937295-d2def551-d4e9-46fc-a6f1-e137c1f157c0.png)
+
+![Status do projeto](https://img.shields.io/badge/in_progress-orange?label=Status&style=for-the-badge&labelColor=3772FF&color=FC7071)
 
 ## **Descrição**
 
