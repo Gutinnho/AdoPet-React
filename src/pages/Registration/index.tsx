@@ -5,6 +5,7 @@ import Logo from 'components/Logo';
 import Form from 'components/Form'
 import FormContent from 'components/Form/FormContent';
 import Forma from 'components/Forma';
+import Patas from 'components/Patas';
 
 function Registration(){
 	return(
@@ -69,6 +70,8 @@ function Registration(){
 			<Forma
 				variation='b'
 			/>
+
+			<Patas />
 		</div>
 	);
 }

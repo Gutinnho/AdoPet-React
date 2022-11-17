@@ -5,6 +5,7 @@ import FormContent from 'components/Form/FormContent';
 
 import styles from './Login.module.scss'
 import Forma from "components/Forma";
+import Patas from "components/Patas";
 
 function Login(){
 	return(
@@ -49,6 +50,8 @@ function Login(){
 			<Forma
 				variation='b'
 			/>
+
+			<Patas />
 		</div>
 	)
 }

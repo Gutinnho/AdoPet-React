@@ -1,0 +1,30 @@
+@import 'styles/variables';
+
+.patas{
+	position: absolute;
+	z-index: 0;
+
+	top: -40px;
+	right: -35px;
+	@media(min-width: $tablet){
+		top: -50px;
+		right: -30px;
+		@media(min-width: $desktop){
+			top: -30px;
+			right: -70px;
+		}
+	}
+
+	&__svg{
+		width: 13.5rem;
+		height: 22.7rem;
+		@media(min-width: $tablet){
+			width: 22.4rem;
+			height: 33.9rem;
+			@media(min-width: $desktop){
+				width: 29.4rem;
+				height: 37.8rem;
+			}
+		}
+	}
+}

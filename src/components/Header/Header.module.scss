@@ -54,6 +54,13 @@
 		justify-content: flex-end;
 
 		grid-area: B;
+		a{
+			svg{
+				*{
+					z-index: 1;
+				}
+			}
+		}
 	}
 
 	z-index: 0;
