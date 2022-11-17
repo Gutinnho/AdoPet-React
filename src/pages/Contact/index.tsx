@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import Description from "components/Description";
 import Form from "components/Form";
 import FormContent from "components/Form/FormContent";
@@ -8,10 +7,7 @@ import styles from './Contact.module.scss';
 
 function Contact(){
 	return(
-		<section className={classNames({
-			[styles.contact]: true,
-			[styles.wrapper]: true
-		})}>
+		<section className={styles.contact}>
 			<div className={styles.contact__description}>
 				<Description 
 					lhV_a="2"

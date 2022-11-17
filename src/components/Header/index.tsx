@@ -40,7 +40,7 @@ function Header({ perfil } : Props){
 				
 				{(perfil === true) ? (
 					<div className={styles.header__perfil}>
-               	<Link className={styles['header__perfil-icon']} to='/profile'>
+               	<Link to='/profile'>
 							<UserCircle size={50} color='#36D6AD' weight='thin'/>
 						</Link>
             	</div>

@@ -1,5 +1,3 @@
-import classNames from "classnames";
-
 import Logo from "components/Logo";
 import Description from 'components/Description';
 import Form from 'components/Form';
@@ -10,10 +8,7 @@ import Forma from "components/Forma";
 
 function Login(){
 	return(
-		<div className={classNames({
-			[styles.login]: true,
-			[styles.wrapper]: true
-		})}>
+		<div className={styles.login}>
 			<Logo 
 				color="blue"
 				variation="a"

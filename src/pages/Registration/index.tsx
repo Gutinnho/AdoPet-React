@@ -4,15 +4,11 @@ import Description from 'components/Description';
 import Logo from 'components/Logo';
 import Form from 'components/Form'
 import FormContent from 'components/Form/FormContent';
-import classNames from 'classnames';
 import Forma from 'components/Forma';
 
 function Registration(){
 	return(
-		<div className={classNames({
-			[styles.registration]: true,
-			[styles.wrapper]: true
-		})}>
+		<div className={styles.registration}>
 			<Logo
 				color='blue'
 				variation='b'

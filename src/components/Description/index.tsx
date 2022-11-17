@@ -19,28 +19,11 @@ const StyledDescription = styled.p`
 `;	
 
 function Description({textColor, lhV_a, lhV_b, p1, p2}: Props){
+	var width = window.screen.width;
+	const p1Actived = width > 768
+
 	return(
 		<div className={styles.paragraph}>
-			{
-				(p1 !== undefined) ? (
-					<StyledDescription 
-						textColor={textColor} 
-						lhV_a={lhV_a} 
-						lhV_b={lhV_b} 
-						className={classNames({
-							[styles.p1]: true,
-							[styles.blue]: textColor === 'blue',
-							[styles.white]: textColor === 'white'
-						})}
-					>
-						{p1}
-					</StyledDescription>
-				) : (
-					<>
-					</>
-				)
-			}
-
 			<StyledDescription 
 				textColor={textColor}
 				lhV_a={lhV_a} 
@@ -50,8 +33,18 @@ function Description({textColor, lhV_a, lhV_b, p1, p2}: Props){
 					[styles.blue]: textColor === 'blue',
 					[styles.white]: textColor === 'white'
 				})}
-			>
-				{p2}
+			>	
+				{
+					p1 != null && p1Actived ? (
+						<>
+							{p1}     {p2}
+						</>
+					) : (
+						<>
+							{p2}
+						</>
+					)
+				}
 			</StyledDescription>
 
 		</div>

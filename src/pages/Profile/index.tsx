@@ -3,15 +3,11 @@ import styles from './Profile.module.scss';
 import Description from "components/Description";
 import Form from "components/Form";
 import FormContent from "components/Form/FormContent";
-import classNames from 'classnames';
 import Forma from 'components/Forma';
 
 function Profile(){
 	return(
-		<section className={classNames({
-			[styles.profile]: true,
-			[styles.wrapper]: true
-		})}>
+		<section className={styles.profile}>
 			<div className={styles.profile__description}>
 				<Description
 					lhV_a="2"

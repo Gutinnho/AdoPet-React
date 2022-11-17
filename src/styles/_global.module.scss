@@ -1,52 +1,54 @@
 @import 'styles/variables';
 
-:root{
-  font-size: 62.5%
+:root {
+	font-size: 62.5%
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 * img {
-  width: min(90%, 100%);
+	width: min(90%, 100%);
 }
 
 .wrapper {
 	display: grid;
 	grid-template-rows: 16.8rem 1fr 10.4rem;
 	grid-template-columns: 1fr;
-	grid-template-areas: 
-	'A'
-	'B'
-	'C';
- 
-	
- 
-	height: max(91.9rem, 100vh);
+	grid-template-areas:
+		'A'
+		'B'
+		'C';
+
+	height: max(91.9rem, 100vmax);
+
 	@media (min-width: $tablet) {
-	  height:  max(120rem, 100vh);
-	  grid-template-rows: 27.4rem 1fr 10.4rem;
-	  @media (min-width: $desktop) {
-		 height: max(100rem, 100vh);
-		 grid-template-rows: 20rem 1fr 8rem;
-	  }
+		height: max(120rem, 100vmax);
+		grid-template-rows: 27.4rem 1fr 10.4rem;
+
+		@media (min-width: $desktop) {
+			height: max(100rem, 100vmax);
+			grid-template-rows: 20rem 1fr 8rem;
+		}
 	}
 }
 
-.gridA{
+.gridA {
 	grid-area: A;
-} 
- 
-.gridB{
+}
+
+.gridB {
 	grid-area: B;
 	align-self: flex-start;
 	height: min(41.5rem, 100%);
-	@media (min-width: $tablet){
-		height: min(66.4rem, 100%);;
+
+	@media (min-width: $tablet) {
+		height: min(66.4rem, 100%);
+		;
 	}
 }
-	
-.gridC{
+
+.gridC {
 	grid-area: C;
 }

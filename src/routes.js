@@ -8,13 +8,14 @@ import Gallery from 'pages/Gallery';
 import Contact from 'pages/Contact';
 import Profile from 'pages/Profile';
 import Footer from 'components/Footer';
-
-import general from 'styles/_global.module.scss';
+import Div from 'components/StyledDiv';
 
 function AppRouter(){
 	return(
 		<Router>
-			<div className={general.wrapper}>
+			<Div 
+				color={'#ecf1ff'}
+			>
 				<Header
 					perfil={true}
 				/>
@@ -35,7 +36,7 @@ function AppRouter(){
 				</main>
 
 				<Footer />
-			</div>
+			</Div>
 		</Router>
 	);
 }
