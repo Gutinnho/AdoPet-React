@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/adopet/static/css/main.420769c6.css",
-    "main.js": "/adopet/static/js/main.65e7fb36.js",
-    "static/media/CaoEGato.png": "/adopet/static/media/CaoEGato.858792cc056bcba8dc4c.png",
-    "static/media/Patas-G.png": "/adopet/static/media/Patas-G.37b367718ea0fee24bc6.png",
-    "static/media/Patas-M.png": "/adopet/static/media/Patas-M.caeeb2aaa52d7ac8881e.png",
-    "static/media/Logo.svg": "/adopet/static/media/Logo.e38524ac68eeed476e976c4a614d9f9d.svg",
-    "static/media/FormaNTop.svg": "/adopet/static/media/FormaNTop.d2884407334f702efbf713d5180388fe.svg",
-    "static/media/FormaBNormal.svg": "/adopet/static/media/FormaBNormal.9198aaf5a2431de6dc4f3d00e9e7f544.svg",
-    "static/media/FormaBReverse.svg": "/adopet/static/media/FormaBReverse.eafaee6354db526a9265cb5913325a2f.svg",
-    "index.html": "/adopet/index.html",
-    "main.420769c6.css.map": "/adopet/static/css/main.420769c6.css.map",
-    "main.65e7fb36.js.map": "/adopet/static/js/main.65e7fb36.js.map"
+    "main.css": "/AdoPet-React/static/css/main.420769c6.css",
+    "main.js": "/AdoPet-React/static/js/main.3b842c6c.js",
+    "static/media/CaoEGato.png": "/AdoPet-React/static/media/CaoEGato.858792cc056bcba8dc4c.png",
+    "static/media/Patas-G.png": "/AdoPet-React/static/media/Patas-G.37b367718ea0fee24bc6.png",
+    "static/media/Patas-M.png": "/AdoPet-React/static/media/Patas-M.caeeb2aaa52d7ac8881e.png",
+    "static/media/Logo.svg": "/AdoPet-React/static/media/Logo.e38524ac68eeed476e976c4a614d9f9d.svg",
+    "static/media/FormaNTop.svg": "/AdoPet-React/static/media/FormaNTop.d2884407334f702efbf713d5180388fe.svg",
+    "index.html": "/AdoPet-React/index.html",
+    "static/media/FormaBNormal.svg": "/AdoPet-React/static/media/FormaBNormal.9198aaf5a2431de6dc4f3d00e9e7f544.svg",
+    "static/media/FormaBReverse.svg": "/AdoPet-React/static/media/FormaBReverse.eafaee6354db526a9265cb5913325a2f.svg",
+    "main.420769c6.css.map": "/AdoPet-React/static/css/main.420769c6.css.map",
+    "main.3b842c6c.js.map": "/AdoPet-React/static/js/main.3b842c6c.js.map"
   },
   "entrypoints": [
     "static/css/main.420769c6.css",
-    "static/js/main.65e7fb36.js"
+    "static/js/main.3b842c6c.js"
   ]
 }
