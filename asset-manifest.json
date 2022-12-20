@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AdoPet-React/static/css/main.420769c6.css",
-    "main.js": "/AdoPet-React/static/js/main.d6a704e8.js",
+    "main.js": "/AdoPet-React/static/js/main.220ed9c1.js",
     "static/media/CaoEGato.png": "/AdoPet-React/static/media/CaoEGato.858792cc056bcba8dc4c.png",
     "static/media/Patas-G.png": "/AdoPet-React/static/media/Patas-G.37b367718ea0fee24bc6.png",
     "static/media/Patas-M.png": "/AdoPet-React/static/media/Patas-M.caeeb2aaa52d7ac8881e.png",
@@ -11,10 +11,10 @@
     "static/media/FormaBNormal.svg": "/AdoPet-React/static/media/FormaBNormal.9198aaf5a2431de6dc4f3d00e9e7f544.svg",
     "static/media/FormaBReverse.svg": "/AdoPet-React/static/media/FormaBReverse.eafaee6354db526a9265cb5913325a2f.svg",
     "main.420769c6.css.map": "/AdoPet-React/static/css/main.420769c6.css.map",
-    "main.d6a704e8.js.map": "/AdoPet-React/static/js/main.d6a704e8.js.map"
+    "main.220ed9c1.js.map": "/AdoPet-React/static/js/main.220ed9c1.js.map"
   },
   "entrypoints": [
     "static/css/main.420769c6.css",
-    "static/js/main.d6a704e8.js"
+    "static/js/main.220ed9c1.js"
   ]
 }
