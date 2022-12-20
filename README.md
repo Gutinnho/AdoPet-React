@@ -1,4 +1,4 @@
-![Logo do projeto Adopet](https://user-images.githubusercontent.com/90591284/200937295-d2def551-d4e9-46fc-a6f1-e137c1f157c0.png)
+[![Logo do projeto Adopet](https://user-images.githubusercontent.com/90591284/200937295-d2def551-d4e9-46fc-a6f1-e137c1f157c0.png)](https://gutinnho.github.io/AdoPet-React/)
 
 ![Status do projeto](https://img.shields.io/badge/in_progress-orange?label=Status&style=for-the-badge&labelColor=3772FF&color=FC7071)
 
@@ -7,6 +7,8 @@
 O projeto é uma SPA para a **Adopet**, que é uma organização que faz a conexão entre possíveis adotantes e ONGS com foco em retirar animais da rua.
 
 O projeto foi feito durante o **[Challenge Front-End 4ª Edição](https://www.alura.com.br/challenges/front-end-4?host=https://cursos.alura.com.br)** da escola **[Alura](https://www.alura.com.br)**, onde foi fornecido o projeto no **[Figma](https://www.figma.com/file/PDQ9unA2aZgbDqYyk6RClZ/Challenge---Adopet?node-id=518%3A11)** e um trello para orientação. Esse mesmo projeto já tinha sido feito por mim, usando apenas HTML e CSS, por isso achei interressante fazê-lo novamente, só que dessa ver usando React. O projeto só em HTML e CSS está neste [repositório](https://github.com/Gutinnho/AdoPet).
+
+É possível acessar o projeto neste [link](https://gutinnho.github.io/AdoPet-React/).
 
 ## **Tecnologias e Técnicas Utilizadas**
 
